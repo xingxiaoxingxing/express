@@ -9,6 +9,15 @@
   <div>欢迎来到express</div>
   <input id="host" value="<%= host %>" />
   <input id="dist" value="<%= dist %>" />
-  <div><img src="<%= dist %>/images/blue_people.jpg"></div>
+  <div>
+      <a href="<%= dist %>/one">
+          <img src="<%= dist %>/images/blue_people.jpg">
+      </a>
+  </div>
+  <ul>
+      <% data.forEach(function(item){%>
+      <li><%=item.measurename %></li>
+      <% }) %>
+  </ul>
 </body>
 </html>
