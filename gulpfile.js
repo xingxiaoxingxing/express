@@ -5,6 +5,8 @@ var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var cssUglify = require('gulp-minify-css');
 var imageMin = require('gulp-imagemin');
+var sass = require('gulp-sass');
+var refresh = require('gulp-refresh');
 
 // 压缩 js 文件
 // 在命令行使用 gulp script 启动此任务
